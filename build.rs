@@ -1,6 +1,6 @@
 fn main() {
-    let bridges = ["src/E1_addition.rs", "src/E2_palindrome.rs"];
-    let cpp_files = ["src/cxx_src/E1_addition.cpp", "src/cxx_src/E2_palindrome.cpp"];
+    let bridges = ["src/e1_addition.rs", "src/e2_palindrome.rs"];
+    let cpp_files = ["src/cxx_src/e1_addition.cpp", "src/cxx_src/e2_palindrome.cpp"];
     
     // Create a single builder for all bridges and C++ files
     let mut builder = cxx_build::bridges(&bridges);
@@ -15,7 +15,7 @@ fn main() {
 
     // Rerun if any source files change
     println!("cargo:rerun-if-changed=src/lib.rs");
-    for op in &["E1_addition", "E2_palindrome"] {
+    for op in &["e1_addition", "e2_palindrome"] {
         println!("cargo:rerun-if-changed=src/{}.rs", op);
         println!("cargo:rerun-if-changed=src/cxx_src/{}.cpp", op);
         println!("cargo:rerun-if-changed=include/{}.h", op);

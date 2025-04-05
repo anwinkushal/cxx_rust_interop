@@ -5,7 +5,7 @@ use cxx::CxxVector;
 #[cxx::bridge]
 mod ffi {
     unsafe extern "C++" {
-        include!("rust_cxx_class/include/E1_addition.h");
+        include!("rust_cxx_class/include/e1_addition.h");
 
         type Addition_Class;
 

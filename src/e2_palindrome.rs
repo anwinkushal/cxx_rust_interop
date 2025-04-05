@@ -1,7 +1,7 @@
 #[cxx::bridge]
 mod ffi {
     unsafe extern "C++" {
-        include!("rust_cxx_class/include/E2_palindrome.h");
+        include!("rust_cxx_class/include/e2_palindrome.h");
 
         type Palindrome_Class;
 
