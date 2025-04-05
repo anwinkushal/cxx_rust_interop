@@ -1,2 +1,2 @@
-pub mod addition;
-pub mod palindrome;
+pub mod E1_addition;
+pub mod E2_palindrome;

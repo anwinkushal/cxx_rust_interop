@@ -1,4 +1,4 @@
-#include "rust_cxx_class/include/palindrome.h"
+#include "rust_cxx_class/include/E2_palindrome.h"
 
 Palindrome_Class::Palindrome_Class() {}
 
